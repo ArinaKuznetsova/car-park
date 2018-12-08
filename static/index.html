@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class="flex-container">
+    <div class="flex-item">
+        <p>Список водителей на маршруте</p>
+        <input id="id1" type="number" placeholder="номер маршрута" required>
+        <button onclick="getDrivers()">submit</button>
+
+        <p>Список автобусов на маршруте</p>
+        <input id="id2" type="number" placeholder="номер маршрута" required>
+        <button onclick="getBuses()">submit</button>
+
+        <p>Протяжённость маршрута</p>
+        <input id="id3" placeholder="номер маршрута" required>
+        <button onclick="getLengthRoutes()">submit</button>
+
+        <p>Время начала или конца движения на данном маршруте</p>
+        <input id="id4" placeholder="номер маршрута" required>
+        <select id="s_id4" required>
+            <option>start</option>
+            <option>end</option>
+        </select>
+        <button onclick="getTimeRoutes()">submit</button>
+    </div>
+
+    <div class="flex-item">
+        <p>Список водитeлей, работающих на данном автобусе</p>
+        <input id="id5" type="number" placeholder="номер автобуса" required>
+        <button onclick="getDriverBus()">submit</button>
+
+        <p>Добавить нового водителя</p>
+        <input id="id6" type="text" placeholder="ФИО" required>
+        <input id="id6_1" type="number" placeholder="класс" required>
+        <input id="id6_2" type="number" placeholder="стаж" required>
+        <input id="id6_3" type="number" placeholder="номер автобуса" required>
+        <button onclick="AddDriver()">submit</button>
+
+        <p>Обновить протяжённость маршрута</p>
+        <input id="id7" type="number" placeholder="номер маршрута" required>
+        <input id="id7_1" type="number" placeholder="длина маршрута" required>
+        <button onclick="PutLength()">submit</button>
+
+        <p>Списать старый автобус</p>
+        <input id="id8" type="number" placeholder="номер автобуса" required>
+        <button onclick="DeleteBus()">submit</button>
+    </div>
+</div>
+<div class="flex-container">
+    <div class="flex-item">
+        <div>
+            <p>Отчёт по автопарку</p>
+            <button id="Info" onclick="getInfo()">Info</button>
+        </div>
+
+        <textarea name="text" rows=15 cols=100 readonly id="demo"></textarea>
+    </div>
+</div>
+
+
+</body>
+
+</html>
