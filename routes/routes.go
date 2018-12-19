@@ -1,9 +1,9 @@
 package routes
 
 import (
+	"github.com/ArinaKuznetsova/car-park/controllers"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/DonRIn/carpark/controllers"
 )
 
 func Run() {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/DonRIn/carpark/db"
-	"github.com/DonRIn/carpark/routes"
+	"github.com/ArinaKuznetsova/car-park/db"
+	"github.com/ArinaKuznetsova/car-park/routes"
 	"log"
 )
 

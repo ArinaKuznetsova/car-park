@@ -2,10 +2,10 @@ package controllers
 
 import (
 	"database/sql"
+	"github.com/ArinaKuznetsova/car-park/schemas"
 	_"github.com/lib/pq"
 	"encoding/json"
-	"github.com/DonRIn/carpark/db"
-	"github.com/DonRIn/carpark/schemas"
+	"github.com/ArinaKuznetsova/car-park/db"
 	"github.com/labstack/echo"
 	"net/http"
 )
